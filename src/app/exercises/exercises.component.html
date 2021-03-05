@@ -1,0 +1,74 @@
+<h2>Exercise 1:</h2>
+    <table style="width:80%">
+        <tr>
+            <th>Class</th>
+            <th colspan='2'>Students</th>
+            <th>Teachers</th>
+        </tr>
+        <ng-container *ngFor="let class of classes">
+            <ng-container *ngFor="let teacher of class.teachers">
+                <ng-container *ngIf="teacher.name">
+            </ng-container>
+                <tr [class.isGreen]="isGreen">
+                    <td>{{class.name}}</td>
+                    <td *ngFor='let student of class.students'>{{student.name}}</td>
+                    <td *ngFor='let teacher of class.teachers'>{{teacher.name}}</td>
+                </tr>
+            </ng-container>
+        </ng-container>
+    </table>
+  <hr>
+
+
+<h2>Exercise 2:</h2>
+<p>The interface for this is found in the "class.ts" file inside "src/app/".
+    <br>And the actual data of the classes is found in "classes-data.ts"
+</p>
+<hr>
+
+
+<h2>Exercise 3:</h2>
+<p>The function that I tried to implement can be found in the ".ts" file of the "exercises" component.</p>
+<hr>
+
+
+<h2>Exercise 4:</h2>
+    <p>I used the built in a UppercasePipe to format the text.</p>
+    
+<table style="width:80%">
+    <tr>
+      <th>Class</th>
+      <th colspan='2'>Students</th>
+      <th colspan='2'>Teachers</th>
+    </tr>
+    <ng-container *ngFor="let class of classes">
+        <ng-container *ngFor="let teacher of class.teachers">
+            <ng-container *ngIf="teacher.name">
+        </ng-container>
+            <tr>
+                <td>{{class.name}}</td>
+                <td *ngFor='let student of class.students'>{{student.name | uppercase}}</td>
+                <td *ngFor='let teacher of class.teachers'>{{teacher.name}}</td>
+            </tr>
+        </ng-container>
+    </ng-container>
+</table>
+<hr>
+
+
+<h2>Exercise 5:</h2>
+<p>In this case I used the (click) property of a button in order to set behaviour
+    <br>of the button. The function "deleteItem()" can be found in the ".ts" file of the
+    <br>component.
+</p>
+
+<button (click)="deleteItem()">Delete</button>
+<hr>
+
+<h2>Exercise 6:</h2>
+<p>In order to solve this we use class binding in order to add a CSS style class based
+    <br> on a condition. Here the button changes the value of a boolean variable and then 
+    <br> the CSS class is either applied or removed.
+</p>
+<button (click)="changeBool()">Is Green?</button>
+<p></p>

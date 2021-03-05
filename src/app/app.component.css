@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-size: 22px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: rgb(111, 0, 255);;
+    padding: 2em 0;
+}
+
+.home{
+    color:white;
+    font-weight: bold;
+}
+
+a{
+    color:white;
+    padding: 1em;
+}
+
+nav{
+    float:right;
+}
+
+ul {
+    margin: 0;
+}

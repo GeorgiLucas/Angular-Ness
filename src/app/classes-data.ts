@@ -1,0 +1,18 @@
+import { CLASS } from './class';
+
+//Exercise 2
+export const CLASSES: CLASS[]= [{
+    name: 'Transfiguration',
+    students: [{name: "Harry"}, {name: "Ginny"}],
+    teachers: [{name: 'Professor McGonagall'}]
+    },
+    {
+    name: 'Potions',
+    students: [{name: 'Ron'}, {name: 'Hermione'}],
+    teachers: [{name: 'Professor Snape'}]
+    },
+    {
+    name: 'Defense Against Dark Arts',
+    students: [{name: 'Draco'}, {name: 'Cho'}],
+    teachers: []
+    }]
